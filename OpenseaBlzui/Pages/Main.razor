@@ -1,0 +1,49 @@
+﻿@page "/"
+@inherits LayoutComponentBase
+
+<div class="main">
+    <Row>
+        <Col Span="24">
+        <MainTopbar />
+        </Col>
+    </Row>
+    <Row>
+        <Col Span="24">
+        <MainHeaderTitile />
+        </Col>
+    </Row>
+    <Row>
+        <div class="menu">
+            <Col Span="24">
+            <Tabs @bind-ActiveKey="@menuNumber" OnChange="OnTabChange" Animated>
+                <TabPane Tab="首页" Key="1">
+                    <MenuFirstPage />
+                </TabPane>
+                <TabPane Tab="注册教程" Key="2">
+                    Content of Tab Pane 2
+                </TabPane>
+                <TabPane Tab="使用教程" Key="3">
+                    Content of Tab Pane 3
+                </TabPane>
+                <TabPane Tab="常见问题" Key="4">
+                    Content of Tab Pane 3
+                </TabPane>
+                <TabPane Tab="创始人" Key="5">
+                    Content of Tab Pane 3
+                </TabPane>
+                <TabPane Tab="发展历史" Key="6">
+                    Content of Tab Pane 3
+                </TabPane>
+                <TabPane Tab="联系方式" Key="7">
+                    Content of Tab Pane 3
+                </TabPane>
+            </Tabs>
+            </Col>
+        </div>
+    </Row>
+    <Row>
+        <Col Span="24">
+        <MainFooter />
+        </Col>
+    </Row>
+</div>

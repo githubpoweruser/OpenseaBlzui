@@ -1,0 +1,24 @@
+﻿.header {
+    padding-top: 5px;
+}
+
+.block_header {
+    width: 966px;
+    font-size: 12px;
+    color: rgb(214, 232, 245);
+    margin: 0 auto;
+}
+
+.banner-1 {
+    float:left;
+    padding: 10px 5px 10px 30px;
+}
+
+.banner-2 {
+    float: left;
+    padding: 18px 5px 10px 60px;
+}
+
+.banner-2 a {
+    color: #fff;
+}

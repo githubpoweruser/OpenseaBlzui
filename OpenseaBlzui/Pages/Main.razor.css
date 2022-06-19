@@ -1,0 +1,27 @@
+﻿.main {
+    width: 100%;
+    height: 100%;
+    background-color: #2E597B;
+}
+
+.menu {
+    width: 966px;
+    margin: 0 auto;
+}
+
+::deep .ant-tabs-nav-wrap {
+    background-color: #000;
+}
+
+::deep .ant-tabs-tab {
+    color: #fff;
+    padding: 12px 20px;
+}
+
+::deep .ant-descriptions {
+    background-color: #fff;
+}
+
+::deep .ant-row {
+    background-color: #2E597B;
+}

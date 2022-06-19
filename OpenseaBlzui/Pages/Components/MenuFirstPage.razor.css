@@ -1,0 +1,15 @@
+﻿.carousel{
+    float: left;
+    width: 600px;
+}
+
+.tdmany {
+    float: left;
+    margin-left: 20px;
+    width: 346px;
+    color: #FFFFFF;
+}
+
+.articleContent {
+    background-color: #FFFFFF;
+}

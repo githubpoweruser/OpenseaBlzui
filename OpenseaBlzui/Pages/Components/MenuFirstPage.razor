@@ -1,0 +1,49 @@
+﻿<Row>
+    <Col Span="24">
+    <div class="carousel">
+        <Carousel Autoplay="TimeSpan.FromSeconds(5)">
+                @foreach (var img in imgList)
+                {
+                <CarouselSlick>
+                    <img src="@img" />
+                </CarouselSlick>
+                }
+        </Carousel>
+    </div>
+    <div class="tdmany">
+        <table border="0">
+                @foreach (var detailsInfo in detailsInfos)
+                {
+                <tr>
+                    <td style="width: 101px; height: 36.35px; line-height: 36.35px;">@detailsInfo.DetailsTitle</td>
+                        @if (!string.IsNullOrEmpty(detailsInfo.LinkAddr))
+                        {
+                        <a style="text-decoration: underline; color: #FFFFFF;" href="@detailsInfo.LinkAddr" target="_blank">
+                        <td style="width: 217px; height: 36.35px; line-height: 36.35px;">@detailsInfo.DetailsContent</td>
+                        </a>
+                        }
+                        else
+                        {
+                        <td style="width: 217px; height: 36.35px; line-height: 36.35px;">@detailsInfo.DetailsContent</td>
+                        }
+                </tr>
+                }
+        </table>
+    </div>
+    </Col>
+</Row>
+<Row>
+    <Col Span="24">
+    <div class="articleContent">
+            @foreach (var data in articleAndImgInfos.ArticleInfos)
+            {
+            <h2 style="font-size: 20px;">@data.Titile</h2>
+            <p>@data.Text</p>
+            }
+            @foreach (var data in articleAndImgInfos.ImgInfos)
+            {
+            <img src="@data.ImgAddr" />
+            }
+    </div>
+    </Col>
+</Row>

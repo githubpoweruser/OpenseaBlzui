@@ -9,7 +9,7 @@ namespace OpenseaBlzui.Pages.Components
     {
         [Inject] public IHttpClientHelper HttpClientHelper { get; set; }
         private HttpRequestInfo httpRequestInfo; //Http响应所需资料
-        private List<string> imgs = new(); //数据库地址
+        private List<string> imgs = new(); //数据库图片地址
         private readonly string path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\images"}"; //当前项目地址
         private readonly List<string> imgList = new(); //轮播图相对地址
         private List<DetailsInfo> detailsInfos = new();
